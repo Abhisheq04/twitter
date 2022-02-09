@@ -7,36 +7,32 @@ post*
 */
 html,
 body {
-  height: 100%;
+  margin: 0%;
+  padding: 0%;
 }
 
 .heading {
-    display: flex;
-    position: relative;
-    /* padding: 30px; */
-    border: 1px solid #ccc;
+  display: flex;
+  position: relative;
+  /* padding: 30px; */
+  border: 1px solid #ccc;
 }
-
 
 input#tweet {
-    margin-top: 1%;
-    width: 18%;
-    margin-left: 10%;
-    border-radius: 6px;
-    position: absolute;
-    border: 0;
+  margin-top: 1%;
+  width: 8%;
+  margin-left: 7%;
+  border-radius: 6px;
+  position: absolute;
+  border: 0;
 }
-
 
 input#myFile {
-    background-color: whitesmoke;
-    color: grey;
-    width: 213px;
-    margin-top: 2%;
+  background-color: whitesmoke;
+  color: grey;
+  width: 213px;
+  margin-top: 2%;
 }
-
-
-
 
 .textarea {
   height: 136px;
@@ -60,18 +56,16 @@ img.icon {
   border-right: 1px solid #ccc;
 }
 img.logo {
-
   top: 0%;
   left: 0%;
 }
 h1 {
- 
   top: 8%;
   left: 5%;
 }
 .post_form {
-   padding: 2% 5%;
-   border-bottom: 1px solid #ccc;
+  padding: 2% 5%;
+  border-bottom: 1px solid #ccc;
 }
 .post_form input {
   width: 80%;
@@ -91,6 +85,7 @@ h1 {
 
 .posts ul {
   padding: 0;
+  border: 1px solid #ccc;
 }
 
 .posts li {
@@ -162,7 +157,7 @@ h1 {
 }
 
 .edit_form input {
-   width: 80%;
+  width: 80%;
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -178,12 +173,9 @@ h1 {
 }
 
 #edit-body {
-  background-color:white;
+  background-color: white;
   color: black;
   font-weight: lighter;
 }
 @media screen and(max-width:400px) {
-  
-  
-  
 }

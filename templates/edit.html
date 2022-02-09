@@ -2,22 +2,34 @@
 
 <section class="content">
   <section class="heading">
-  <img src="/static/img/twitterblue .svg" class="logo" />
-  <h1>EDIT</h1>
-</section>
+    <img src="/static/img/twitterblue .svg" class="logo" />
+    <h1>EDIT</h1>
+  </section>
   <section class="edit_form">
     <form action="/" method="POST" enctype="multipart/form-data">
       {%csrf_token%}
-        <input type="text" name= "name" value="{{ post.name }}">
-         <input id="edit-body" name="body" value="{{ post.body }}" required />
-         <img src="{{ post.image.url }}" alt="">
-         <div></div><input type="file" id="myFile" name="image" style="background-color: whitesmoke; color: grey; width: 213px;"/>
-         <input id='tweet' type="submit" value="Cancel"  style="margin-top: 0%; width: 13%; margin-left: 10%; border-radius: 10% " /> 
-         <input id='tweet' type="submit" value="Update"  style="margin-top: 0%; width: 13%; margin-left: 2%; border-radius: 10%;" /> 
-         </div>
+      <input type="text" name="name" value="{{ post.name }}" />
+      <input id="edit-body" name="body" value="{{ post.body }}" required />
+      <img src="{{ post.image.url }}" alt="" />
+      <div>
+        <input
+          type="file"
+          id="edit-file"
+          name="image"
+        />
+        <input
+          id="cancel"
+          type="submit"
+          value="Cancel"
+          
+        />
+        <input
+          id="update"
+          type="submit"
+          value="Update"
+        />
+      </div>
     </form>
-      
-    
   </section>
   <script
     src="https://code.jquery.com/jquery-3.6.0.js"

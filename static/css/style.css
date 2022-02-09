@@ -179,7 +179,7 @@ h1 {
 }
 
 .edit_form {
-  padding: 100px 27px;
+  padding: 20px 27px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -188,5 +188,53 @@ h1 {
   color: black;
   font-weight: lighter;
 }
-@media screen and(max-width:400px) {
+input#update {
+  position: absolute;
+  width: 6%;
+  margin-left: 1%;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+input#cancel {
+  position: absolute;
+  width: 6%;
+  margin-left: 9%;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+/*  */
+
+@media screen and (max-width: 950px) {
+  input#cancel {
+    width: 12%;
+    margin-left: 20%;
+    margin-top: 2%;
+  }
+  input#update {
+    width: 12%;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 700px) {
+  input#cancel {
+    width: 19%;
+    margin-left: 23%;
+    margin-top: 2%;
+  }
+  input#update {
+    width: 19%;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+}
+
+#edit-file {
+  width: 40%;
+  margin-top: 2%;
+  background-color: #ccc;
+  border: 0;
+  border-radius: 5px;
 }

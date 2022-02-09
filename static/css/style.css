@@ -11,10 +11,32 @@ body {
 }
 
 .heading {
-  display: block;
-  position: relative;
-  padding: 30px;
+    display: flex;
+    position: relative;
+    /* padding: 30px; */
+    border: 1px solid #ccc;
 }
+
+
+input#tweet {
+    margin-top: 1%;
+    width: 18%;
+    margin-left: 10%;
+    border-radius: 6px;
+    position: absolute;
+    border: 0;
+}
+
+
+input#myFile {
+    background-color: whitesmoke;
+    color: grey;
+    width: 213px;
+    margin-top: 2%;
+}
+
+
+
 
 .textarea {
   height: 136px;
@@ -48,8 +70,8 @@ h1 {
   left: 5%;
 }
 .post_form {
-  padding: 100px 27px;
-  border-bottom: 1px solid #ccc;
+   padding: 2% 5%;
+   border-bottom: 1px solid #ccc;
 }
 .post_form input {
   width: 80%;
@@ -164,7 +186,4 @@ h1 {
   
   
   
-}
-.divide .h1{
-  margin-left: 15%;
 }

@@ -26,6 +26,13 @@ input#tweet {
   position: absolute;
   border: 0;
 }
+@media screen and (max-width: 650px) {
+  input#tweet {
+    margin-top: 3%;
+    width: 19%;
+    margin-left: 7%;
+  }
+}
 
 input#myFile {
   background-color: whitesmoke;
@@ -33,7 +40,11 @@ input#myFile {
   width: 213px;
   margin-top: 2%;
 }
-
+@media screen and (max-width: 650px) {
+  input#myFile {
+    width: 200px;
+  }
+}
 .textarea {
   height: 136px;
 }

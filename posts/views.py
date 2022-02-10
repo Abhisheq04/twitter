@@ -38,11 +38,14 @@ def LikeView(request,post_id):
     
 def edit(request, post_id):
     post= Post.objects.get(id=post_id)
+    if request.method =="GET":
+        posts = Post.objects.get(id=post_id)
+        return render(request, 'edit.html',{'posts':posts})
     if request.method == "POST":
-        form = PostForm(request.POST, request.FILES, instance=post)
+        editposts = Post.objects.get(id=post_id)
+        form = PostForm(request.POST, request.FILES, instance=editposts)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect("/")
     else:
-        form=PostForm(PostForm)
-        return render(request, 'edit.html',{'post':post, 'form': form})
+        return HttpResponse("Not Valid")

@@ -37,7 +37,7 @@ def LikeView(request,post_id):
     return HttpResponseRedirect('/')
     
 def edit(request, post_id):
-    post= Post.objects.get(id=post_id)
+    posts= Post.objects.get(id=post_id)
     if request.method =="GET":
         posts = Post.objects.get(id=post_id)
         return render(request, 'edit.html',{'posts':posts})
